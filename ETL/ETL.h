@@ -7,6 +7,8 @@
 
 _Called_from_function_class_ ETL{
     std:string dataset;
+
+    // what is this delimitter? check if the data is separated by comma or dot
     std:string delimitter;
     //header flag indicating whether the file has a header or not
     bool header;
