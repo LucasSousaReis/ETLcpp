@@ -6,9 +6,18 @@
 
 
 std::vector<std::vector<std::string>>ETL::readCSV(){
-    std::iostream file(dataset):
+    //open the dataset for reading purposes only
+    std::ifstream file(dataset):
+    //creating a vector of vectors for?
     std::vector<std::vector<std::string>> dataString:
 
     std::string line = "";
-    while(getline(file, line))
+    // Iterate trough the file using the delimitter provided by the constructor
+    while(getline(file, line)){
+        std::vector<std::string>vec;
+        boost::algorithm::split(vec, line, boost::is_any_of(delimitter));
+        datString.push_back(vec);
+    }
+    file.close();
+
 }

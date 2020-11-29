@@ -2,7 +2,7 @@
 #ifndef ETL_h
 #define ETL_h
 #include <iostream>
-//Eigen linear algebra template
+//Eigen linear algebra librarie
 #include <eigen3/Eigen/Dense>
 
 _Called_from_function_class_ ETL{
