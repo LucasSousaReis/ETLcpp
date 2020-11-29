@@ -16,8 +16,9 @@ std::vector<std::vector<std::string>>ETL::readCSV(){
     while(getline(file, line)){
         std::vector<std::string>vec;
         boost::algorithm::split(vec, line, boost::is_any_of(delimitter));
-        datString.push_back(vec);
+        dataString.push_back(vec);
     }
     file.close();
+    return dataString;
 
 }

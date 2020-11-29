@@ -15,7 +15,8 @@ _Called_from_function_class_ ETL{
     public://Constructor arguments
 
         ETL(std::string data,std::string separator, bool head): dataset(data),delimitter(separator), header(head)
-        ()
+        {}
+        std::vector<std::vector<std::string>>readCSV();
 };
  
 #endif
